@@ -454,16 +454,23 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Gestión de producción</h2>
-                                    <p class="item-intro text-muted">Simulaciones, análisis de resultados, KPIs y propuesta MES.</p>                                  
-                                    <p> Simulaciones con Tecnomatix Plant Simulator </p>
-                                    <p>    Proceso de papa manual</p>
+                                    <p class="item-intro text-muted">VSM, simulaciones, análisis de resultados.</p>  
+                                    
+                                    <h3 class="title">  VSM </h3>
+                                    <h4 class="title"> Proceso de actual (manual) </h4>
+                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/VSMpapamanual.PNG" alt="..." />
+                                    <h4 class="title"> Proceso automatizado </h4>
+                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/VSMpapaautoma.PNG" alt="..." />
+                                    
+                                    <h3 class="title">  Simulaciones con Tecnomatix Plant Simulator </h3>
+                                    <h4 class="title"> Proceso de papa manual </h4>
                                     <p> Para el primer caso se realiza la simulación en el programa de Tecnomatix Plant Simulator de la linea de producción de una expresa de papa, la cual inicia su proceso productivo desde los costales de papa que llegan por lotes en un camión pequeño, con una cantidad de 120 bultos de 50kg c/u. Este proceso es el que se va a utilizar de referencia para comparar y verificar la utilidad de la implementación del sistema automatizado. </p>
                                     <p> Work In Progress (WIP): 1000kg.</p>
                                     <p> Acontinuación se presenta el diagrama de simulación de la linea de producción para el caso del proceso manual de la papa. En donde se pueden apreciar las distintas estaciones usadas, que son: lavado, selección, clasificación y empaquetado. Además el uso de los buffer que se utilizaban en la planta real para no detener los procesos</p>
                                     
                                     <div class="icon-box icon-box-green">           
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/TM1.PNG" alt="..." />
-                                    <h4 class="title"> Linea de producción para planta de tomate manual </h4>
+                                    
                                     </div>
                                         
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/TM2.PNG" alt="..." />
@@ -475,7 +482,7 @@
                                     
                                     
                                   
-                                    <p> Proceso de tomate manual </p>
+                                    <h4 class="title"> Proceso de tomate manual </h4>
                                     <p> Ahora se busca un proceso para la linea de producción de tomate, desde que llega del campo hasta que sale empaquetada, todo el proceso realizado de forma manual, con el objetivo al igual que en el caso anterior de realizar una comparación clara y evidenciar las ventajas de la automatización de dicho proceso. </p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/TM4.PNG" alt="..." />
                                     <p> En este caso en las estadísticas vemos serios problemas respecto a los tiempos de espera que se mantienen en las estaciones, ya que gran parte del tiempo no se encuentran trabajando a la espera de que la estación anterior pueda suplir el material necesario para avanzar. La estación de clasificación es la que se ve más afectada por esto, pues en la estación de lavado hay un importante cuello de botella desde el inicio del proceso, y este efecto se logra incluso expandir hasta los tiempos de proceso en la estación de empaquetado. </p>
@@ -483,10 +490,13 @@
                                     <p> Como último podemos ver las estadísticas otorgadas por el programa como un análisis de los tiempos del producto en la linea de producción además de las tasas de salida para esa configuración, siendo de 120 bultos por día, teniendo en cuenta que el día se contaria como 24h seguidas de producción. </p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/TM6.PNG" alt="..." />
                                     
-                                    <p> Procesado de papa automatizado </p> 
+                                    <h4 class="title"> Proceso automatizado </h4>
                                     <p> Ahora comenzamos a utilizar los procesos automatizados, en donde se buscar cumplir con todas las etapas del proceso manual pero proponiendo nuevos métodos con el uso de máquina para que mejor la eficiencia del trabajo además controlar con mayor facilidad las variables de la linea de producción y ver la utilidad que se le puede sacar a todos estos montajes. </p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/TP1.PNG" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/plantesquema.PNG" alt="..." />
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Plantaaumtom.PNG" alt="..." />
+
                                     <p> En este caso la linea de producción es mucho más larga y se utilizan bastantes elementos nuevos, entre ellos selectores, y bandas transportadoras, las cuales apartes de mover en material también funcionan como buffer hasta cierto punto. </p>
                                     <p> Tal como se observa en la imágen de flujo en los primeros procesos no hay ningún problema y las máquina están trabajando la mayor parte del tiempo, sin embargo, a medida que avanza el proceso se comienza a encontrar cierto cuello de botella en el selector debido a que las maquinas empaquetadoras de cada sección se mantienen la mayor parte del tiempo esperando la llegada de material. </p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/TP2.PNG" alt="..." />
