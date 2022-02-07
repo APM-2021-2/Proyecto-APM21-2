@@ -1121,11 +1121,36 @@
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             <!-- Project details-->
-                                            <h2 class="text-uppercase">Controladores industriales </h2>
-                                            <p class="item-intro text-muted"> Tecnologías de control.</p>
+                                            <h2 class="text-uppercase">Actuadores en automatizacion </h2>
                                             <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/actuadores.jpg" alt="..." />
-                                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                           
+                                            <p> Se requiere seleccionar un conjunto de sensores y actuadores que permitan realizar la selección de las papas/tomates de acuerdo al peso en 3 diferentes categorías, para su empaque. Para esta aplicación es necesario, entonces, que se seleccionen 3 cilindros, que generen un “empuje” sobre el producto a clasificar, para que este llegue a una zona destinada al empaque junto a otros productos de similares características.</p>
+
+                                            <p> El funcionamiento general es el siguiente, se realizará la conceptualización de la etapa con un tomate: en primer lugar, cuando el tomate pasa por el sensor de proximidad de la banda de peso, el peso medido entra en una de 3 categorías. Estas categorías están determinadas por la norma técnica colombiana. Dependiendo de este peso, se activa el cilindro correspondiente, permitiendo que el tomate pueda ser empaquetado junto con otros tomates de similar calibre y peso.</p>
+                                            <p>Cabe destacar, para que el tomate pueda ser clasificado uno por uno, justo antes de entrar a la banda de peso, este paso por una banda enfiladora. <p>
+
+                                            <h5 class="text-uppercase"> Selección de Componentes</h5>
+
+
+                                            <p>El primer paso realizado para la selección de componentes, después de entender la forma de funcionamiento y los requerimientos de espacio, es dibujar el diagrama de cuerpo libre de los actuadores, junto con los elementos que influyen en el proceso. Con esto se calcula la fuerza de máquina que ejerce el cilindro, con esta fuerza se encuentra la fuerza de cilindro. Posteriormente se calcula el Área y diámetro mínimo correspondiente. Se escoge el diámetro normalizado más cercano, que se encuentre por encima del diámetro mínimo. Después, se calcula se procede a calcular la fuerza de avance y retroceso. Con estos parámetros se selecciona el cilindro. <p>
+
+                                            <p>La máxima fuerza que cualquiera de los 3 cilindros puede llegar a experimentar, es en el caso de que un producto grande necesite ser clasificado, siendo el peso más alto esperado 180 gr. En este caso, solo la fuerza de fricción está involucrada en el cálculo. El coeficiente de fricción entre la banda y el producto no es conocido, por lo que se toma un coeficiente aproximado de 0.45. Con un factor de margen del 15%, se obtiene que la fuerza de maquina es de 0.91N. La fuerza del cilindro es de 1.76 N. Al sacar el Área mínima si se usa un diámetro de 40mm, se puede descubrir la presión necesaria. Para este caso, la presión es muy baja, incluso con el cilindro de diámetro más pequeño normalizado, 20mm. 
+                                            La banda tiene un ancho de 0.5m, por lo que se debe asegurar que el cilindro tenga un rango mayor a la mitad de este ancho. <p>
+
+                                            <p>Se escoge el cilindro neumático CDG1BA20-350-I-G02- para los 3 actuadores de la marca SMC. <p>
+
+                                            <p>Una vez escogidos los cilindros se puede seleccionar las válvulas y el compresor. Para esto se debe calcular el consumo de aire del cilíndro, el consumo de aire en n ciclos del cilindro y el consumo en condiciones normales. Para este caso se escogio un compresor A29 27 CM2 de la marca ABAC, de 27 litros, 2 CV. <p>
+                                            <h5 class="text-uppercase"> Esquema neumático</h5>
+
+                                            <p>En la parte neumática tenemos inicialmente el compresor que llega a una unidad de acondicionamiento de aire, que se encarga de regular la presión y acondicionarlo para el trabajo posterior. Tras esto tenemos la entrada de los tres actuadores (cilindros) del problema, que llegan a unas válvulas 5/2 neumáticas que reciben reciben señales eléctricas para su conmutación, y vienen con silenciadores en sus salidas. Tras esta sección el aire llega a las válvulas de estrangulación y antirretorno, las cuales para este caso se situaron en un valor del 60%, y finalmente llegan a los actuadores en cualquiera de los dos sentidos. Los actuadores tienen sensores de proximidad ubicados en los dos extremos del cilindro, de tal forma que tengamos la señal eléctrica indicando la posición de los tres actuadores. <p>
+
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/CilindroDiagrama.png" alt="..." />
+                                            <h5 class="text-uppercase"> Diagramas</h5>
+
+                                            <p>Los diagramas de estado y de funciones se muestran en la imagen. En cuanto al diagrama de estado, podemos evidenciar que ninguno de los cilindros tiene que estar activado al mismo tiempo, por lo que se deben apagar antes de que se active algún otro. En el diagrama de funciones, se puede ver que los actuadores se activan dependiendo de dos señales, la primera es el sensor de proximidad de la banda de peso, y el segundo es la respectiva activación del sensor de peso según la categoría. Para poder desactivarse los cilindros, se debe activar el sensor de proximidad que pasa por los tres toboganes que llevan a la correspondiente máquina de empaquetado y sellado.<p>
+
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/CilindrosAPM2.png " alt="..." />
+
+
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
                                                 Cerrar
