@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <workspace name="C:\Users\user\Documents\SEMESTRE_14\APM\Analisis en robotLoad.rws">
+    <project name="Celda APM" station="" robotserienumber="" robotmodel="" eoatooling="" processshop="" engineer="" telephone="" email="" remarks="">
+      <robot name="IRB460-110/2.40" file="C:\Program Files (x86)\ABB Industrial IT\Robotics IT\RobotLoad\ROBOTS\IRB460\IRB460_110_240_Robot.rbt">
+      </robot>
+      <loadcase name="Analisis de carga" wristdown="">
+        <load name="Paletizado" mass="30" cgx="0" cgy="0" cgz="0" jx="0" jy="0" jz="0" TCPx="0" TCPy="0" TCPz="0" TCPq1="1" TCPq2="0" TCPq3="0" TCPq4="0" type="PAYLOAD" />
+        <load name="Gripper" mass="70" cgx="0" cgy="0" cgz="0" jx="0" jy="0" jz="0" TCPx="0" TCPy="0" TCPz="0" TCPq1="1" TCPq2="0" TCPq3="0" TCPq4="0" type="TOOL" />
+      </loadcase>
+    </project>
+  </workspace>
+</xml>
